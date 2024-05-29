@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pageimages",
+  "info": {
+    "singularName": "pageimage",
+    "pluralName": "pageimages",
+    "displayName": "Pageimage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

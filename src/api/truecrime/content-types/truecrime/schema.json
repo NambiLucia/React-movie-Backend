@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "truecrimes",
+  "info": {
+    "singularName": "truecrime",
+    "pluralName": "truecrimes",
+    "displayName": "Truecrime"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

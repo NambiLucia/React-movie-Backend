@@ -926,6 +926,70 @@ export interface ApiReviewReview extends Schema.CollectionType {
   };
 }
 
+export interface ApiThrillerThriller extends Schema.CollectionType {
+  collectionName: 'thrillers';
+  info: {
+    singularName: 'thriller';
+    pluralName: 'thrillers';
+    displayName: 'Thriller';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true> &
+      Attribute.Required;
+    title: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::thriller.thriller',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::thriller.thriller',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiTruecrimeTruecrime extends Schema.CollectionType {
+  collectionName: 'truecrimes';
+  info: {
+    singularName: 'truecrime';
+    pluralName: 'truecrimes';
+    displayName: 'Truecrime';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true> &
+      Attribute.Required;
+    title: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::truecrime.truecrime',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::truecrime.truecrime',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -949,6 +1013,8 @@ declare module '@strapi/types' {
       'api::new.new': ApiNewNew;
       'api::pageimage.pageimage': ApiPageimagePageimage;
       'api::review.review': ApiReviewReview;
+      'api::thriller.thriller': ApiThrillerThriller;
+      'api::truecrime.truecrime': ApiTruecrimeTruecrime;
     }
   }
 }

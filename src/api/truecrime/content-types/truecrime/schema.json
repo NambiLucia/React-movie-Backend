@@ -4,7 +4,8 @@
   "info": {
     "singularName": "truecrime",
     "pluralName": "truecrimes",
-    "displayName": "Truecrime"
+    "displayName": "Truecrime",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "title": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     }
   }

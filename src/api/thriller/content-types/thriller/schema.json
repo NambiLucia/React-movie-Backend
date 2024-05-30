@@ -4,7 +4,8 @@
   "info": {
     "singularName": "thriller",
     "pluralName": "thrillers",
-    "displayName": "Thriller"
+    "displayName": "Thriller",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,19 +13,22 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "title": {
       "type": "string",
       "required": true
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

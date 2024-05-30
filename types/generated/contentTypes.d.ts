@@ -794,6 +794,7 @@ export interface ApiGenreGenre extends Schema.CollectionType {
     singularName: 'genre';
     pluralName: 'genres';
     displayName: 'Genre';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -801,6 +802,7 @@ export interface ApiGenreGenre extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String & Attribute.Required & Attribute.Unique;
     image: Attribute.Media<'images'>;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -870,6 +872,7 @@ export interface ApiPageimagePageimage extends Schema.CollectionType {
     singularName: 'pageimage';
     pluralName: 'pageimages';
     displayName: 'Pageimage';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -877,6 +880,7 @@ export interface ApiPageimagePageimage extends Schema.CollectionType {
   attributes: {
     image: Attribute.Media<'images', true> & Attribute.Required;
     title: Attribute.String & Attribute.Required;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -932,6 +936,7 @@ export interface ApiThrillerThriller extends Schema.CollectionType {
     singularName: 'thriller';
     pluralName: 'thrillers';
     displayName: 'Thriller';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -940,6 +945,7 @@ export interface ApiThrillerThriller extends Schema.CollectionType {
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true> &
       Attribute.Required;
     title: Attribute.String & Attribute.Required;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -964,6 +970,7 @@ export interface ApiTruecrimeTruecrime extends Schema.CollectionType {
     singularName: 'truecrime';
     pluralName: 'truecrimes';
     displayName: 'Truecrime';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -972,6 +979,7 @@ export interface ApiTruecrimeTruecrime extends Schema.CollectionType {
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true> &
       Attribute.Required;
     title: Attribute.String;
+    link: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

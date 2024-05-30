@@ -4,7 +4,8 @@
   "info": {
     "singularName": "genre",
     "pluralName": "genres",
-    "displayName": "Genre"
+    "displayName": "Genre",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +18,15 @@
       "unique": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "link": {
+      "type": "string"
     }
   }
 }

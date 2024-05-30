@@ -13,10 +13,14 @@
   "attributes": {
     "image": {
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true,
+      "required": true
     }
   }
 }

@@ -1,57 +1,60 @@
-# 🚀 Getting started with Strapi
+# About Chill & Thrill Cinema (REACT-MOVIE-APP -BACKEND)
+This is the backend repo for **Chill & Thrill Cinema**. 
+It's a platform for fans of all things horror, thriller, and true-crime documentaries.
+It's dedicated to helping gothic movie enthusiasts discover the best and most thrilling films in these genres.
+Our curated rankings will guide you to the must-watch movies, ensuring you have a spine-tingling viewing experience every time.
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
-### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+![alt text]()
 
-```
-npm run develop
-# or
-yarn develop
-```
+## Features
+1. ### Top -rated: 
+- Curated list of top 5 movies from the different gothic genres
+2.  ### Genres:
+- The movies are split into three different gothic genres i.e Horror,Thriller and True-crime documentaries
 
-### `start`
+3.  ### Subcription: 
+- Fans of these movie genres can sign up to get the latest updates
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
 
-```
-npm run start
-# or
-yarn start
-```
+# Getting Started
+## Prerequisites
+To run this project, you will need:
+- A code editor, such as VS Code.
+- React + Vite
+- Basic knowledge of React and REST APIs.
+- Postman
+- Node.js installed on your machine.
 
-### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+# Installation
+Clone the repository
 
-```
-npm run build
-# or
-yarn build
-```
+# Backend Setup
+Ensure you have a backend service running to handle API requests. In this case, we used **Strapi**.
 
-## ⚙️ Deployment
+# API Endpoints
+- Subscribe:POST (https://react-movie-backend-8a2o.onrender.com/api/auth/local/register)
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+## API testing
+We used **Postman**
 
-## 📚 Learn more
+# Usage
+1. Browse  
+- Browse through the to 5 rated movies and the different genre categories.
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+2. News
+- Browse through the news section for latest updates in the horror film industry
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+# Contributing
+We welcome contributions! Submit a pull request.
 
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+# Subscribe
+- Subscribe with us for the latest updates on horrors,thrillers and truecrime documentaries
 
 ---
+We hope you have a wonderful experience.
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+
